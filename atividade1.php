@@ -1,20 +1,14 @@
 <?php
 
-$nome = $_POST['nome'];
-$endereco = $_POST['endereco'];
-$idade = $_POST['idade'];
-$sexo = $_POST['sexo'];
+$frutas = ["morango", "maçã", "banana", "manga", "kiwi"]; 
 
-echo "<h2>Resultado:</h2>";
 
-echo "Nome: $nome <br>";
+echo $frutas [0] . "<br>";
+echo  $frutas [1] . "<br>";
+echo $frutas [2] . "<br>";
+echo $frutas [3] . "<br>";
+echo $frutas [4] . "<br>";
 
-if ($idade >= 18) {
-    echo "Minha idade é: $idade <br>";
-    echo "Sexo: $sexo <br>";
-    echo "Endereço: $endereco <br>";
-} else {
-    echo "Menor de idade";
-}
-
-?>
+$frutas[] = "uva";
+echo "<br>Nova fruta adicionada:";
+echo $frutas[5];
